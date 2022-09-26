@@ -8,9 +8,11 @@
 
 h1,
 h2,
-h3,
+h3
 {
- font-family: 'Times New Roman', Times, serif;
+
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
 body {
