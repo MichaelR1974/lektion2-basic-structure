@@ -6,9 +6,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1,
-h2,
-h3
+h1,h2,h3
 {
 
   font-family: 'Times New Roman', Times, serif;
@@ -32,4 +30,56 @@ body {
   padding: 16px;
 }
 
+  li + li {
 
+      margin-top: 15px;
+
+  }
+
+  main article > p { 
+
+    margin-top: 20px;
+  }
+
+  main article > section > h3{
+
+    margin-top: 20px;
+  }
+
+  main > article  {
+
+    color: black;
+    border-top: 1px solid;
+}
+
+
+
+  body header > nav >  a  {
+
+    padding-left: 20px;   
+
+  }
+
+
+  a:hover{
+
+  color :yellow;
+
+  }
+
+  a:active{
+
+    color: green;
+
+
+  }
+  .footer{
+  color: black;
+  border-top: 1px solid;
+  }
+
+  .footer article > section > ui > li{
+
+  padding-left: 30px;
+
+  }
