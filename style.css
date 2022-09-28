@@ -109,7 +109,7 @@ Momentan nicht relevant
 
     color: black;
     border-top: 1px solid;
-    
+    padding-left: 20px;
   }
 
   body header > nav >  a  {
@@ -136,7 +136,7 @@ Momentan nicht relevant
     background-color: rgb(100, 194, 120);
 
   }
- 
+
   
 
   .footer article > section > ui > li{
