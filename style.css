@@ -1,19 +1,21 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+html {
+  font-family: fantasy;
+}
 
-
-  * {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+@media print {
+  .hide_me {
+    display: none;
   }
 
-  html{
-
-    font-family: fantasy;
-    
+  .navi {
+    display: none;
   }
-
-
-
+}
 /*
 Momentan nicht relevant
   header{
@@ -22,127 +24,127 @@ Momentan nicht relevant
     top: 0px;
 
   }
-*/ 
+*/
 
+h2 {
+  position: relative;
+  left: -1rem;
+}
 
+h1,
+h2,
+h3 {
+  font-family: 'Times New Roman', Times, serif;
+}
 
-  h2{
-      position: relative;
-      left: -16px;
+body {
+  margin: 0;
+}
 
+.header {
+  padding: 1rem 1.6rem;
+  text-align: center;
+  background-color: #eee;
+}
+
+.profil_header {
+  font-size: 1em;
+}
+
+.experience_1 {
+  font-size: 1em;
+}
+
+.experience_2 {
+  font-size: 1em;
+}
+.hide_me {
+  position: absolute;
+  top: 0.3rem;
+  right: 0.5rem;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  color: black;
+  background-color: rgb(93, 179, 93);
+}
+
+.headline::after {
+  content: '😉';
+}
+
+article section > header > H3,
+p {
+  display: inline-block;
+}
+
+.main,
+.footer {
+  max-width: 40rem;
+  margin: auto;
+  padding: 0.5rem;
+}
+
+*::selection {
+  background-color: rgb(210, 221, 160);
+}
+
+li + li {
+  margin-top: 1.5rem;
+}
+
+main article > section > p {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+main article > section > header > h3 {
+  margin-top: 1rem;
+}
+
+p {
+  max-width: 60ch;
+}
+
+article {
+  color: black;
+  border-top: 0.1rem solid;
+  padding-left: 1.7rem;
+}
+
+body header > nav > a {
+  padding-left: 2rem;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  background-color: rgb(185, 190, 186);
+}
+
+a:active {
+  background-color: rgb(100, 194, 120);
+}
+
+.footer article > section > ui > li {
+  padding-left: 1rem;
+}
+
+/*********Mobile Screen************/
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 20px;
   }
 
-  h1,h2,h3 {
-
-    font-family: 'Times New Roman', Times, serif;
-
+  .hide_me {
+    position: fixed;
   }
-
-  body {
-
-    margin: 0;
-
-  }
-
-
-  .header {
-    padding: 48px 16px;
-    text-align: center;
-    background-color: #eee;
-  }
-
-  .hide_me{
-
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    padding: 8px;
-    border-radius: 4px;
-    color: black;
-    background-color: rgb(93, 179, 93);
-  }
-
-  
-
-  .headline::after {
-
-    content: "😉"
-
-  }
-
-  article section > H3,p {
-
-    display: inline-block;
-
-  }
-
-
-  .main, .footer {
-
-    max-width: 800px;
-    margin:  auto;
-    padding: 16px;
-  }
-
-  *::selection {
-
-    background-color: rgb(210, 221, 160);
-
-  }
-  li + li {
-
-    margin-top: 15px;
-
-  }
-
-  main article > p { 
-
-    margin-top: 20px;
-  }
-
-  main article > section > h3{
-
-    margin-top: 20px;
-  }
-
-  article  {
-
-    color: black;
-    border-top: 1px solid;
-    padding-left: 20px;
-  }
-
-  body header > nav >  a  {
-
-    padding-left: 20px;   
-
-  }
-
-  
-  a:visited{
-
-    color: black;
-
-  } 
-
-  a:hover{
-
-    background-color :rgb(185, 190, 186);
-
-  }
-
-  a:active{
-
-    background-color: rgb(100, 194, 120);
-
-  }
-
-  
-
-  .footer article > section > ui > li{
-
-    padding-left: 30px;
-
-  }
-
-  
+}
