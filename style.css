@@ -8,33 +8,61 @@
 
   html{
 
-  font-family: fantasy;
+    font-family: fantasy;
+    
   }
+
+
+
+/*
+Momentan nicht relevant
   header{
 
-    position: sticky;
+    _position: sticky;
     top: 0px;
+
+  }
+*/ 
+
+
+
+  h2{
+      position: relative;
+      left: -16px;
 
   }
 
   h1,h2,h3 {
 
-  font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 
   }
 
   body {
 
-  margin: 0;
+    margin: 0;
 
   }
 
 
   .header {
-  padding: 48px 16px;
-  text-align: center;
-  background-color: #eee;
+    padding: 48px 16px;
+    text-align: center;
+    background-color: #eee;
   }
+
+  .hide_me{
+
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 8px;
+    border-radius: 4px;
+    color: black;
+    background-color: rgb(93, 179, 93);
+  }
+
+  
 
   .headline::after {
 
@@ -44,24 +72,26 @@
 
   article section > H3,p {
 
-  display: inline-block;
+    display: inline-block;
 
   }
 
 
   .main, .footer {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 16px;
+
+    max-width: 800px;
+    margin:  auto;
+    padding: 16px;
   }
 
   *::selection {
-  background-color: rgb(210, 221, 160);
+
+    background-color: rgb(210, 221, 160);
 
   }
   li + li {
 
-      margin-top: 15px;
+    margin-top: 15px;
 
   }
 
@@ -75,10 +105,11 @@
     margin-top: 20px;
   }
 
-  main > article  {
+  article  {
 
     color: black;
     border-top: 1px solid;
+    
   }
 
   body header > nav >  a  {
@@ -105,14 +136,13 @@
     background-color: rgb(100, 194, 120);
 
   }
-    
-  .footer{
-    color: black;
-    border-top: 1px solid;
-  }
+ 
+  
 
   .footer article > section > ui > li{
 
     padding-left: 30px;
 
   }
+
+  
