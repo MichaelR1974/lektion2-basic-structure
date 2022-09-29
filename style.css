@@ -1,30 +1,17 @@
 * {
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
   font-family: fantasy;
+  font-size: 20px;
 }
 
 @media print {
   .hide_me {
     display: none;
   }
-
-  .navi {
-    display: none;
-  }
 }
-/*
-Momentan nicht relevant
-  header{
-
-    _position: sticky;
-    top: 0px;
-
-  }
-*/
 
 h2 {
   position: relative;
@@ -44,20 +31,64 @@ body {
 .header {
   padding: 1rem 1.6rem;
   text-align: center;
-  background-color: #eee;
+
+  background-image: linear-gradient(
+    rgb(236, 228, 228) 20%,
+    grey 70%,
+    white 80%
+  );
 }
 
+section header > p {
+  padding-left: 67px;
+}
+
+article section > ul {
+  padding-left: 92px;
+}
 .profil_header {
   font-size: 1em;
 }
 
 .experience_1 {
+  flex-basis: 50px;
   font-size: 1em;
 }
 
 .experience_2 {
+  flex-basis: 50px;
   font-size: 1em;
 }
+
+.div_experience2 > h3 {
+  padding-left: 37px;
+}
+.div_experience1 {
+  display: flex;
+
+  font-size: 1em;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.div_experience2 {
+  display: flex;
+
+  font-size: 1em;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.text_1 {
+  padding-left: 68px;
+}
+
+.text_2 {
+  padding-left: 68px;
+}
+
 .hide_me {
   position: absolute;
   top: 0.3rem;
@@ -77,8 +108,7 @@ p {
   display: inline-block;
 }
 
-.main,
-.footer {
+.main {
   max-width: 40rem;
   margin: auto;
   padding: 0.5rem;
@@ -131,17 +161,32 @@ a:active {
   padding-left: 1rem;
 }
 
+.footer {
+  max-width: 40rem;
+  margin: auto;
+  padding: 0.5rem;
+  background-image: linear-gradient(
+    rgb(236, 228, 228) 20%,
+    grey 70%,
+    white 80%
+  );
+}
 /*********Mobile Screen************/
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   html {
-    font-size: 18px;
+    font-size: 20px;
+  }
+
+  .navi {
+    display: flex;
+    flex-direction: column;
   }
 }
 
 @media screen and (min-width: 992px) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .hide_me {
